@@ -1,0 +1,128 @@
+.trending__contaienr {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.trending__left {
+    width: calc(50% - 15px);
+    background-image: url('../../../img/trending/image-map-1-570x715.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trending__right {
+    width: calc(50% - 15px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catd__top {
+    position: relative;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catd__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 0 25px 0;
+}
+
+.catd__bottom > h5 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+
+    text-transform: uppercase;
+}
+
+.catd__bottom > .product__price {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.075em;
+
+    color: #dab57a;
+}
+
+
+.product__price {
+    display: flex;
+}
+
+.full {
+    margin-right: 10px;
+    color: #9b9b9b;
+
+    text-decoration: line-through;
+}
+
+
+.catd__top::before {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+   
+    content: "";
+    background-color: rgba(17, 17, 17, 0.39);
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+
+.trending__item:hover .catd__top::before {
+    opacity: 1;
+    width: 94%;
+    height: 95%;
+    
+    
+}
+
+.catd__top > img {
+    display: block;
+    aspect-ratio: auto 270 / 280;
+    transition: all .3s ease;
+}
+
+.trending__item:hover .catd__top > img {
+    transform: scale(1.1);
+}
+
+.button {
+    position: absolute;
+    z-index: 15;
+    padding: 12px 23px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #151515;
+    cursor: pointer;
+    transition: background .4s, border-color .4s, color .4s;
+    opacity: 0;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+
+.button:hover {
+    background-color: #dab57a;
+    color: #fff;
+}
+
+.trending__item:hover .button {
+    opacity: 1;
+}

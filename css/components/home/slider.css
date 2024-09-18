@@ -1,0 +1,101 @@
+/* slider btns styles */
+.home__slider {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 7.1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider__btns {
+    position: absolute;
+    margin: 0 auto;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.home__slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* btns style */
+.slider__btns {
+    position: absolute;
+    z-index: 10;
+    padding: 0 50px 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.slider__btns > .btn{
+    position: relative;
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.pointer {
+    z-index: 10;
+    position: absolute;
+    color: #efc4a3;
+}
+
+.bcg__color {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffbb;
+    transition: all ease .3s; 
+}
+
+/* Correcting pointers */
+.prev > .pointer {
+    transform: rotate(180deg); 
+    padding: 3px 0 0 3px;
+}
+
+.next > .pointer {
+    padding: 3px 0 0 2px;
+}
+
+/* Btns hover effects */
+
+.btn:hover .pointer {
+    color: #fff;
+}
+
+.prev:hover .bcg__color {
+    transform: rotate(-360deg); 
+    border-radius: 50%;
+    background-color: #efc4a3;
+}
+
+.next:hover .bcg__color {
+    transform: rotate(360deg); 
+    border-radius: 50%;
+    background-color: #efc4a3;
+}
+

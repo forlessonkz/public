@@ -1,0 +1,15 @@
+@import url('./base/reset.css');
+@import url('./base/vars.css');
+@import url('./base/base.css');
+
+
+/* Components */
+@import url('./components/offer/offer.css');
+@import url('./components/offer/offer-responsive.css');
+
+
+@import url('./components/trending/trending.css');
+
+@import url('./components/servise/servise.css');
+
+@import url('./components/flooring/flooring.css');

@@ -1,0 +1,56 @@
+.servise {
+    padding: 50px 15px 50px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__item {
+    padding: 8px 8px;
+    border: 1px solid #d7d7d7;
+    width: calc(33.3% - 15px);
+    height: 144px;
+
+    transition: all ease .3s;
+}
+
+.service__card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d7d7d7;
+}
+.servise__card__icon > img {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.servise__card__description a {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    color: #151515;
+    text-transform: uppercase;
+    transition: all ease .3s;
+}
+
+.servise__card__description p {
+    margin-top: 2px;
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    color: #9b9b9b;
+    font-family: "Poppins", serif;
+    transition: all ease .3s;
+}
+
+.service__item:hover {
+    background-color: #dab57a;
+}
+
+.service__item:hover a,
+.service__item:hover p {
+    color: #fff;
+}
