@@ -1,0 +1,65 @@
+.banner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url('../../../img/banner/bg-cta-2.jpg');
+
+}
+.banner__content {
+    padding: 90px 0 130px;
+}
+
+.banner__content {
+    width: 600px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner__content h3 {
+    text-align: center;
+}
+.banner__content span {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    
+}
+
+.banner__content p {
+    margin-top: 16px;
+
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+.banner__content a {
+    margin-top: 30px;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    padding: 17px 33px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.075em;
+    background-color: #dab57a;
+    text-transform: uppercase;
+    color: #fff;
+}
